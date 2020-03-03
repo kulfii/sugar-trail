@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en" data-env=environment)
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sugar Trail
+    meta(name="description" content="A Mongo Express Node HMR Boilerplate.")
+    meta(name="theme-color" content="#ffffff")
+    link(rel="icon", href="favicon.png", type="image/png")
+    link(rel="stylesheet", href=`${asset('/styles/main.css')}`)
+    link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato" type="text/css")
+    script console.log("Environment: #{environment}\nVersion: #{version}")
+
+  body
+    h1 Sugar Trail
+    h2= version
+    script(src=`${asset('/scripts/main.js')}`)
+    script(src=`${asset('/service-worker.js')}`)

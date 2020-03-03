@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node build/server.js",
     "serve": "npm run build:server",
+    "static": "npx live-server",
     "debug": "npm run build:server -- --inspect",
     "clean": "rimraf public/scripts public/images public/styles public/manifest.json public/service-worker.js",
     "build": "npm-run-all --parallel 'build:* -- --env.production'",
